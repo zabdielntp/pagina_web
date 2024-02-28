@@ -1,0 +1,52 @@
+.animacion {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .animacion img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .animacion p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    font-size: 1.5em;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .animacion:hover img {
+    animation: desvanecer 1s linear forwards;
+  }
+  
+  .animacion:hover p {
+    animation: subir 1s ease-in-out forwards;
+  }
+  
+  @keyframes desvanecer {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes subir {
+    0% {
+      opacity: 0;
+      bottom: 0;
+    }
+    100% {
+      opacity: 1;
+      bottom: 50%;
+    }
+  }
