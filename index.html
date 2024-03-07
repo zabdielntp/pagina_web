@@ -11,22 +11,43 @@
 </head>
 
 <body>
-  <header class="bg-white text-dark p-3 d-flex justify-content-between">
-    <div>
-      <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="me-auto img-fluid">
-    </div>
-    <div class="text-end">
-      <button class="btn btn-outline-dark">FACED</button>
-      <button id="btn_contacto" class="btn btn-outline-light">
-        <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen" class="img-fluid d-block">
-      </button>
-    </div>
+  <header class="bg-white text-dark">
+    <nav class="navbar p-1 d-flex justify-content-between fixed-top main-nav" id="mi-navbar">
+      <div>
+        <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="me-auto img-fluid">
+      </div>
+      <div class="text-end">
+        <button class="btn btn-outline-dark">FACED</button>
+        <button id="btn_contacto" class="btn btn-outline-light">
+          <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen"
+            class="img-fluid d-block">
+        </button>
+        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasTop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+          data-bs-scroll="true">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <section class="position-relative">
     <div id="video-overlay"
       class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-      <h1 class="text-white  position-absolute bottom-0 start-50 translate-middle" id="texto-video">Somos NTP Media <img src="./public/img/icono blanco.png" width="50px" height="50px"></h1>
+      <h1 class="text-white  position-absolute bottom-0 start-50 translate-middle" id="texto-video">Somos NTP Media <img
+          src="./public/img/icono blanco.png" width="50px" height="50px"></h1>
     </div>
     <video autoplay muted loop src="./public/Videos/Bienvenida_1.mp4" class="w-100"></video>
   </section>
@@ -36,10 +57,11 @@
     <div class="row">
       <!--Columna Texto-->
       <div id="text-section" class="col-lg-4 col-md-4 col-sm-12 text-white fs-2 p-5">
-        <p>NTP MEDIA</p>
-        <p>Ad Tech solutions 360</p>
+        <p class="fs-1">NTP MEDIA <br></p>
+        <p>Ad Tech solutions 360 <br></p>
         <p>Somos un grupo internacional de comunicación y publicidad con mas de 20 años de experiencia.
-
+          <br>
+          <br>
           Hechos en México
         </p>
       </div>
@@ -87,7 +109,7 @@
             <div class="tarjeta_dato_duro text-white">
               <div class="contenido_tarjeta_dato_duro p-5">
                 <span class="justify-content-center fs-3 fw-bold">GAMING.</span> <span
-                  class="justify-content-center fs-3">Desarrollo y creacion de experias para marcas </span>
+                  class="justify-content-center fs-3">Desarrollo y creacion de experiencias para marcas </span>
               </div>
             </div>
           </div>
@@ -145,61 +167,81 @@
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/Brand_Social_1.png" alt="Imagen"
-              class="img-fluid ">
-            <text class="position-absolute top-50 start-50 translate-middle">Texto</text>
+            <img src="./public/Soluciones/Brand_Social_1.png" alt="Imagen" class="img-fluid ">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">BRAND SOCIAL: <br> </span>
+              <span class="fs-4">Filtros y mas para volverse viral</span>
+            </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/Video_1.png" alt="Imagen"
-              class="img-fluid">
-            <text class="position-absolute top-50 start-50 translate-middle">Texto</text>
+            <img src="./public/Soluciones/Video_1.png" alt="Imagen" class="img-fluid">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">VIDEO: <br> </span>
+              <span class="fs-4">Que te vea tu segmento objetivo</span>
+            </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/Mobile_1.png" alt="Imagen"
-              class="img-fluid">
-            <text class="position-absolute top-50 start-50 translate-middle .img-solucion">Texto</text>
+            <img src="./public/Soluciones/Mobile_1.png" alt="Imagen" class="img-fluid">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">MOBILE: <br> </span>
+              <span class="fs-4">Crea trafico en tu sitio</span>
+            </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/Gaming_1.png" alt="Imagen"
-              class="img-fluid">
-            <text class="position-absolute top-50 start-50 translate-middle">Texto</text>
+            <img src="./public/Soluciones/Gaming_1.png" alt="Imagen" class="img-fluid">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">GAMING: <br> </span>
+              <span class="fs-4">No te quedes fuera de juego</span>
+            </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/New_Web_1.png" alt="Imagen"
-              class="img-fluid">
-            <text class="position-absolute top-50 start-50 translate-middle">Texto</text>
+            <img src="./public/Soluciones/New_Web_1.png" alt="Imagen" class="img-fluid">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">NEW WEB: <br> </span>
+              <span class="fs-4">Vuelve tu marca en una experiencia</span>
+            </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-6 p-0 col-solucion">
         <a href="." target="_blank" class="d-block card_prod">
           <div class="card-solucion">
-            <img src="./public/Soluciones/TkTk_Solutions_1.png" alt="Imagen"
-              class="card-img-top img-fluid">
-            <text class="position-absolute top-50 start-50 translate-middle">Texto</text>
+            <img src="./public/Soluciones/TkTk_Solutions_1.png" alt="Imagen" class="card-img-top img-fluid">
+            <div class="position-absolute bottom-0 start-0 text-white p-3 texto-solucion">
+              <span class="fs-3 fw-bold">SOLUTIONS: <br> </span>
+              <span class="fs-4">Para que todos te escuchen</span>
+            </div>
           </div>
         </a>
       </div>
-      
-
     </div>
   </section>
+
+  <!-- Seccion  Texto Fondo claro-->
+  <section id="seccion-texto" class="text-dark bg-light p-5">
+    <div class="p-2">
+      <p class="fs-2">
+        Marcas que han confiado en nuestras soluciones:
+      </p>
+    </div>
+  </section>
+
   <section class="position-relative">
     <!--<div id="video-overlay"
       class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
@@ -207,30 +249,80 @@
     </div>-->
     <video autoplay muted loop src="./public/Videos/Empresas.mp4" class="w-100"></video>
   </section>
-<!---->
+  <!---->
   <section id="carousel-section" class="d-flex">
     <div id="carousel" class="flex-grow-1 overflow-hidden">
       <!-- Coloca tus imágenes para el carrusel aquí -->
     </div>
     <div id="text-carousel" class="p-4">
-      <p>Texto en la parte derecha del carrusel.</p>
+      <p>.</p>
     </div>
   </section>
 
-  <section id="image-slider" class="overflow-hidden">
-    <!-- Coloca tus imágenes para el slider aquí -->
-  </section>
 
-  <footer class="bg-dark text-white text-center p-3">
-    <a href="#" class="text-white">Enlace 1</a> |
-    <a href="#" class="text-white">Enlace 2</a> |
-    <a href="#" class="text-white">Enlace 3</a> |
-    <!-- Agrega más enlaces según sea necesario -->
+  <footer class="text-white text-center p-2">
+    <section class="row">
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <p class="lead">Legal</p>
+        <a href="#" class="text-white">Aviso de privacidad</a>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <p class="lead">Plataformas</p>
+        <div class="row">
+          <a href="#" class="text-white">Brand Social</a>
+          <a href="#" class="text-white">Mobile</a>
+          <a href="#" class="text-white">Video</a>
+          <a href="#" class="text-white">New Web</a>
+          <a href="#" class="text-white">Solutions</a>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <p class="lead">Siguenos</p>
+        <div class="row p-0 justify-content-center">
+          <div class="col-lg-2 col-md-6 col-sm-3 d-block ">
+            <img src="./public/img/FB logo.png">
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-3">
+            <img src="./public/img/IG logo.png">
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-3">
+            <img src="./public/img/Linked In logo.png">
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-3">
+            <img src="./public/img/WA logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="row p-0 justify-content-center">
+          <div class="col-12">
+            <img src="./public/img/logo blanco 2024.png" height="20%" width="auto">
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 
   <!-- Agregar enlaces a Bootstrap 5 JS y Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+
+
+  <script>
+    // Script para cambiar el color de fondo del navbar al hacer scroll
+    const navbar = document.getElementById("mi-navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        navbar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+      } else {
+        navbar.style.backgroundColor = "white";
+      }
+      window.scroll
+    });
+  </script>
 </body>
 
 </html>

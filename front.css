@@ -21,16 +21,17 @@
 }
 
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
+
+/*Barra de navegacion*/
+.main-nav{
+  background: #fff;
 }
 
+.bg-color-scroll{
+  background-color: #ffffff79 ;
+  transition: background-color 0.3s ease-in-out;
+}
 /*Seccion video*/
 #video-overlay {
   position: absolute;
@@ -138,14 +139,12 @@ footer {
   max-height: 490px;
 }
 
-.card_prod text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  width: 100%;
+.texto-solucion{
   z-index: 2;
+}
+
+/*Footer*/
+footer {
+  background-color: #411189;
+  width: 100%;
 }
