@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NTP - Media</title>
-  <!-- Agregar enlaces a Bootstrap 5 CSS y JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <link href="./front.css" rel="stylesheet">
 </head>
 
@@ -17,7 +22,7 @@
         <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="me-auto img-fluid">
       </div>
       <div class="text-end">
-        <button class="btn btn-outline-dark">FACED</button>
+        <button class="btn montserrat-bold press-3">FASED</button>
         <button id="btn_contacto" class="btn btn-outline-light">
           <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen"
             class="img-fluid d-block">
@@ -57,13 +62,17 @@
     <div class="row">
       <!--Columna Texto-->
       <div id="text-section" class="col-lg-4 col-md-4 col-sm-12 text-white fs-2 p-5">
-        <p class="fs-1">NTP MEDIA <br></p>
-        <p>Ad Tech solutions 360 <br></p>
-        <p>Somos un grupo internacional de comunicación y publicidad con mas de 20 años de experiencia.
-          <br>
-          <br>
-          Hechos en México
-        </p>
+        <p class="press-3 montserrat-bold">NTP MEDIA <br></p>
+        <p class="subt-3 montserrat-regular">Ad Tech solutions 360 <br></p>
+        <div class="col-8">
+          <p class="txt-2 montserrat-light">Somos un grupo internacional de comunicación y publicidad con mas de 20 años
+            de experiencia.
+            <br>
+            <br>
+            Hechos en México
+          </p>
+        </div>
+
       </div>
       <!--Fin Columna Texto-->
 
@@ -154,10 +163,10 @@
 
   <!-- Seccion  Texto en negro-->
   <section id="seccion-texto" class="text-white">
-    <div>
-      <h1>
-        Logramos objetivos con mas soluciones innovadoras
-      </h1>
+    <div class="col-8">
+      <p class="press-1 montserrat-regular">
+        Logramos objetivos con soluciones innovadoras
+      </p>
     </div>
   </section>
 
@@ -236,7 +245,7 @@
   <!-- Seccion  Texto Fondo claro-->
   <section id="seccion-texto" class="text-dark bg-light p-5">
     <div class="p-2">
-      <p class="fs-2">
+      <p class="subt-1 montserrat-regular">
         Marcas que han confiado en nuestras soluciones:
       </p>
     </div>
@@ -259,7 +268,6 @@
     </div>
   </section>
 
-
   <footer class="text-white text-center p-2">
     <section class="row">
       <div class="col-lg-2 col-md-6 col-sm-6">
@@ -275,7 +283,6 @@
           <a href="#" class="text-white">New Web</a>
           <a href="#" class="text-white">Solutions</a>
         </div>
-
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12">
         <p class="lead">Siguenos</p>
@@ -307,13 +314,9 @@
   <!-- Agregar enlaces a Bootstrap 5 JS y Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-
   <script>
     // Script para cambiar el color de fondo del navbar al hacer scroll
     const navbar = document.getElementById("mi-navbar");
-
     window.addEventListener("scroll", function () {
       if (window.scrollY > 100) {
         navbar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
@@ -324,5 +327,4 @@
     });
   </script>
 </body>
-
 </html>
