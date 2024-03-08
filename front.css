@@ -1,18 +1,11 @@
 #btn_contacto {
-
   border: none;
   cursor: pointer;
-
 }
 
 #btn_contacto:hover {
   opacity: 0.8;
 }
-
-#title-section {
-  position: relative;
-}
-
 
 
 
@@ -21,11 +14,14 @@
 }
 
 
-
+body{
+  background-color:black;
+  
+}
 
 /*Barra de navegacion*/
 .main-nav{
-  background: #fff;
+  z-index: 2;
 }
 
 .bg-color-scroll{
@@ -47,6 +43,7 @@
 #texto-video:hover{
   filter: opacity(10%);
   transition: filter 0.3s ease;
+  
 }
 
 
@@ -214,4 +211,40 @@ footer {
 }
 .txt-3{
   font-size: 0.5em;
+}
+
+.fased-1{
+  font-size: 2.5em;
+  letter-spacing: -0.05em;
+}
+
+.color-verde{
+  background-color: green;
+}
+
+
+
+@keyframes anim_navbar_regreso{
+  from {background-color: #ffffff79;
+        position: fixed;}
+  to {background-color: #fff;
+  position: relative;}
+}
+@keyframes anim_navbar_ida{
+  from {background-color: #fff;
+    position: relative;}
+  to {background-color: #ffffff79;
+    position: fixed;}
+}
+@keyframes anim_navbar_ida_2{
+  0% {
+    position: relative;
+    background-color: #fff;
+  }
+  1%{
+    position: fixed;
+  }
+  100% {background-color: #ffffff79;
+    position: fixed;
+    }
 }
