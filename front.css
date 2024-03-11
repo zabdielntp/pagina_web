@@ -248,3 +248,15 @@ footer {
     position: fixed;
     }
 }
+@keyframes anim_navbar_vuelta_2{
+  0% {
+    position: fixed;
+    background-color: #ffffff79;
+  }
+  1%{
+    position: relative;
+  }
+  100% {background-color: #fff;
+    position: relative;
+    }
+}
