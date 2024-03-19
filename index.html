@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,31 +19,48 @@
 
 <body>
   <header class="bg-white text-dark">
-    <nav class="navbar p-1 justify-content-between  main-nav w-100" id="mi-navbar">
-      <div>
-        <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="me-auto img-fluid">
+    <nav class="navbar p-0 main-nav w-100 " id="mi-navbar">
+      <!--Logo header NTP-->
+      <div class="px-5 py-0 d-flex col-lg-8 col-md-6 col-sm-5 col-12 align-items-center justify-content-center 
+      justify-content-lg-start justify-content-md-start justify-content-sm-center ">
+        <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="img-header">
       </div>
-      <div class="text-end">
-        <button class="btn montserrat-bold fased-1">FASED</button>
-        <button id="btn_contacto" class="btn btn-outline-light">
-          <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen"
-            class="img-fluid d-block">
-        </button>
-        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasTop">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-          </svg>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-          data-bs-scroll="true">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!--Resto de Elementos del header-->
+      <div class="col-12 col-lg-4 col-md-6 col-sm-7 py-0 px-4">
+        <!--Row-->
+        <div class="row justify-content-center
+        justify-content-lg-end justify-content-md-end justify-content-sm-center ">
+          <!--Boton FACED-->
+          <div class="d-flex align-items-center justify-content-end col-5 ">            
+            <button class="btn montserrat-bold fased-1 p-0">FASED</button>
           </div>
-          <div class="offcanvas-body">
+          <!--Boton Contacto-->
+          <div class="d-flex align-items-center justify-content-center col-4 p-0">
+            <button id="btn_contacto" class="btn btn-outline-light ">
+              <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen"
+                class="d-block img-header">
+            </button>
+          </div>
+          <!--Boton Menu-->
+          <div class="d-flex align-items-center justify-content-start col-2  p-1">
+            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasTop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+              data-bs-scroll="true">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,17 +68,15 @@
   </header>
 
   <section class="position-relative">
-    
     <video autoplay muted loop src="./public/Videos/Bienvenida_1.mp4" class="w-100"></video>
   </section>
-
   <section class="container-fluid" id="seccion_datos_duros">
     <!--Division por seccion-->
     <div class="row">
       <!--Columna Texto-->
       <div id="text-section" class="col-lg-4 col-md-4 col-sm-12 text-white fs-2 p-5">
-        <p class="press-3 montserrat-bold">NTP MEDIA <br></p>
-        <p class="subt-3 montserrat-regular">Ad Tech solutions 360 <br></p>
+        <h1 class="press-3 montserrat-bold">NTP MEDIA<br></h1>
+        <h2 class="subt-3 montserrat-regular">Ad Tech solutions 360 <br></h2>
         <div class="col-8">
           <p class="txt-2 montserrat-light">Somos un grupo internacional de comunicación y publicidad con mas de 20 años
             de experiencia.
@@ -198,7 +214,7 @@
             <img src="./public/Soluciones/Mobile_1.png" alt="Imagen" class="">
             <div class="texto-solucion text-white">
               <span class="fs-3 fw-bold">MOBILE: <br> </span>
-              <span class="fs-4">Crea trafico en tu sitio <br>   </span>
+              <span class="fs-4">Crea trafico en tu sitio <br> </span>
             </div>
           </div>
         </a>
@@ -299,10 +315,10 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12 p-0 position-relative">
-        
-          <div class="p-5">
-            <img src="./public/img/logo blanco 2024.png" width="80%" class="p-0">
-          </div>
+
+        <div class="p-5">
+          <img src="./public/img/logo blanco 2024.png" width="80%" class="p-0">
+        </div>
       </div>
     </section>
   </footer>
@@ -318,19 +334,20 @@
         //navbar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
         //navbar.style.position = "fixed";
         //navbar.style.transitionDuration="0.3s"
-        navbar.style.animationName= "anim_navbar_ida_2";
-        navbar.style.animationDuration="0.3s";
-        navbar.style.animationFillMode="forwards";
+        navbar.style.animationName = "anim_navbar_ida_2";
+        navbar.style.animationDuration = "0.3s";
+        navbar.style.animationFillMode = "forwards";
       } else {
         //navbar.style.backgroundColor = "white";
         //navbar.style.position = "relative";
         //navbar.style.transitionProperty="filter";
-        navbar.style.animationName= "anim_navbar_vuelta";
-        navbar.style.animationDuration="0.3s";
-        navbar.style.animationFillMode="forwards";
+        navbar.style.animationName = "anim_navbar_vuelta";
+        navbar.style.animationDuration = "0.3s";
+        navbar.style.animationFillMode = "forwards";
       }
       window.scroll
     });
   </script>
 </body>
+
 </html>
