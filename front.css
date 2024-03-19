@@ -14,20 +14,21 @@
 }
 
 
-body{
-  background-color:black;
-  
+body {
+  background-color: black;
+
 }
 
 /*Barra de navegacion*/
-.main-nav{
+.main-nav {
   z-index: 2;
 }
 
-.bg-color-scroll{
-  background-color: #ffffff79 ;
+.bg-color-scroll {
+  background-color: #ffffff79;
   transition: background-color 0.3s ease-in-out;
 }
+
 /*Seccion video*/
 #video-overlay {
   position: absolute;
@@ -37,13 +38,13 @@ body{
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   display: flex;
-  
+
 }
 
-#texto-video:hover{
+#texto-video:hover {
   filter: opacity(10%);
   transition: filter 0.3s ease;
-  
+
 }
 
 
@@ -94,35 +95,38 @@ body{
 
 /*Soluciones*/
 
-#seccion-soluciones{
+#seccion-soluciones {
   background-color: #000;
 }
-.card-solucion{
+
+.card-solucion {
   max-height: 490px;
-  min-height: 450px;
-  position: relative;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
-.card-solucion::before{
+
+.card-solucion::before {
   content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.692), transparent);
-    z-index: 1;
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.692), transparent);
+  z-index: 1;
+
 }
-.card-solucion:hover{
+
+.card-solucion:hover {
   filter: grayscale(0%);
   background: linear-gradient(to top, transparent, transparent);
 }
+
 .card_prod {
-  position:relative;
+  position: relative;
   cursor: pointer;
+  
 }
 
 .card_prod img:hover {
@@ -136,8 +140,14 @@ body{
   max-height: 490px;
 }
 
-.texto-solucion{
+
+.texto-solucion {
   z-index: 2;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-90%, -20%);
+  
 }
 
 /*Footer*/
@@ -154,97 +164,140 @@ footer {
   font-weight: 400;
   font-style: normal;
 }
+
 .montserrat-light {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
+
 .montserrat-semi-bold {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
+
 .montserrat-bold {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
+
 .montserrat-black {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
 }
+
 .anton-regular {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.press-1{
+.press-1 {
   font-size: 4em;
 }
-.press-2{
+
+.press-2 {
   font-size: 3em;
 }
-.press-3{
+
+.press-3 {
   font-size: 2.5em;
 }
 
-.subt-1{
+.subt-1 {
   font-size: 2em;
 }
-.subt-2{
+
+.subt-2 {
   font-size: 1.7em;
 }
-.subt-3{
+
+.subt-3 {
   font-size: 1.3em;
 }
-.txt-1{
+
+.txt-1 {
   font-size: 1em;
 }
-.txt-2{
+
+.txt-2 {
   font-size: 0.7em;
 }
-.txt-3{
+
+.txt-3 {
   font-size: 0.5em;
 }
 
-.fased-1{
+.fased-1 {
   font-size: 2.5em;
   letter-spacing: -0.05em;
 }
 
-.color-verde{
+.color-verde {
   background-color: green;
 }
 
 
 
-@keyframes anim_navbar_regreso{
-  from {background-color: #ffffff79;
-        position: fixed;}
-  to {background-color: #fff;
-  position: relative;}
+@keyframes anim_navbar_regreso {
+  from {
+    background-color: #ffffff79;
+    position: fixed;
+  }
+
+  to {
+    background-color: #fff;
+    position: relative;
+  }
 }
-@keyframes anim_navbar_ida{
-  from {background-color: #fff;
-    position: relative;}
-  to {background-color: #ffffff79;
-    position: fixed;}
+
+@keyframes anim_navbar_ida {
+  from {
+    background-color: #fff;
+    position: relative;
+  }
+
+  to {
+    background-color: #ffffff79;
+    position: fixed;
+  }
 }
-@keyframes anim_navbar_ida_2{
+
+@keyframes anim_navbar_ida_2 {
   0% {
     position: relative;
     background-color: #fff;
   }
-  1%{
+
+  1% {
     position: fixed;
   }
-  100% {background-color: #ffffff79;
+
+  100% {
+    background-color: #ffffff79;
     position: fixed;
-    }
+  }
+}
+
+@keyframes anim_navbar_vuelta_2 {
+  0% {
+    position: fixed;
+    background-color: #ffffff79;
+  }
+
+  1% {
+    position: relative;
+  }
+
+  100% {
+    background-color: #fff;
+    position: relative;
+  }
 }
