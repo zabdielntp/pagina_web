@@ -28,7 +28,11 @@ body {
   background-color: #ffffff79;
   transition: background-color 0.3s ease-in-out;
 }
-
+.img-header{
+  height: 75%;
+  width: auto;
+  max-width: 100%;
+}
 /*Seccion video*/
 #video-overlay {
   position: absolute;
@@ -199,6 +203,14 @@ footer {
   font-style: normal;
 }
 
+.aleo-bold {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .press-1 {
   font-size: 4em;
 }
@@ -236,13 +248,14 @@ footer {
 }
 
 .fased-1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   letter-spacing: -0.05em;
 }
 
 .color-verde {
   background-color: green;
 }
+
 
 
 
