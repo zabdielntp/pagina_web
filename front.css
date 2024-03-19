@@ -203,6 +203,14 @@ footer {
   font-style: normal;
 }
 
+.aleo-bold {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .press-1 {
   font-size: 4em;
 }
@@ -247,6 +255,7 @@ footer {
 .color-verde {
   background-color: green;
 }
+
 
 
 
