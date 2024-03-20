@@ -77,14 +77,6 @@ body {
   padding: 20px;
 }
 
-/*Seccion texto fondo negro*/
-#seccion-texto {
-  background-color: black;
-  padding-top: 7%;
-  padding-bottom: 7%;
-  padding-left: 2%;
-}
-
 .texto-blur {
   font-size: 5em;
   text-shadow: 1px 1px 15px white;
@@ -96,6 +88,16 @@ body {
     text-shadow: 1px 1px 15px white;
   }
 }
+
+/*Seccion texto fondo negro*/
+#seccion-texto {
+  background-color: black;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 2%;
+}
+
+
 
 /*Soluciones*/
 
@@ -149,8 +151,8 @@ body {
   z-index: 2;
   position: absolute;
   bottom: 0%;
-  left: 50%;
-  transform: translate(-90%, -20%);
+  left: 0%;
+  transform: translate(0%, -20%);
   
 }
 
@@ -252,7 +254,7 @@ footer {
 }
 
 .subt-3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .txt-1 {
@@ -276,8 +278,59 @@ footer {
   background-color: green;
 }
 
-
-
+@media (min-width:100px) and (max-width:570px) {
+  .press-1{
+    font-size: 2em;
+  }
+  .press-2 {
+    font-size: 1.8em;
+  }
+  
+  .press-3 {
+    font-size: 1.6em;
+  }
+  
+  .subt-1 {
+    font-size: 1.5em;
+  }
+  
+  .subt-2 {
+    font-size: 1.3em;
+  }
+  
+  .subt-3 {
+    font-size: 0.9em;
+  }
+  
+  .txt-1 {
+    font-size: .6em;
+  }
+  
+  .txt-2 {
+    font-size: 0.5em;
+  }
+  
+  .txt-3 {
+    font-size: 0.25em;
+  }
+  
+  .fased-1 {
+    font-size: 1.9em;
+    letter-spacing: -0.05em;
+  }
+}
+@media (min-width:768px) and (max-width:880px) {
+  .press-3 {
+    font-size: 2.2em;
+    
+  }
+}
+@media (min-width:768px) and (max-width:1000px) {
+  .subt-2 {
+    font-size: 1.2em;
+    
+  }
+}
 
 @keyframes anim_navbar_regreso {
   from {
