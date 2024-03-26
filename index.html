@@ -24,31 +24,34 @@
   <header class="bg-white text-dark">
     <nav class="navbar p-0 main-nav w-100 " id="mi-navbar">
       <!--Logo header NTP-->
-      <div class="px-5 py-0 d-flex col-lg-8 col-md-6 col-sm-5 col-12 align-items-center justify-content-center 
-      justify-content-lg-start justify-content-md-start justify-content-sm-center ">
-        <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="img-header">
+      <div class="d-flex ps-lg-5 ps-md-3 ps-sm-2 ps-0 py-0 
+                  col-lg-8 col-md-6 col-sm-6 col-6 
+                  align-items-center justify-content-center 
+                  justify-content-lg-start justify-content-md-start 
+                  justify-content-sm-center d-block">
+        <img id="logo" src="./public/Encabezado/Logotipo NTP encabezado.png" alt="Logo" class="img-logo-ntp ms-lg-5">
       </div>
       <!--Resto de Elementos del header-->
-      <div class="col-12 col-lg-4 col-md-6 col-sm-7 py-0 px-4">
+      <div class="col-6 col-lg-4 col-md-6 col-sm-6 py-0 px-4">
         <!--Row-->
         <div class="row justify-content-center
-        justify-content-lg-end justify-content-md-end justify-content-sm-center ">
+        justify-content-lg-end justify-content-md-end justify-content-sm-center p-0">
           <!--Boton FACED-->
-          <div class="d-flex align-items-center justify-content-end col-5 ">            
-            <button class="btn montserrat-bold fased-1 p-0">FASED</button>
+          <div class="d-flex align-items-center justify-content-end col-6 p-0">            
+            <button class="btn montserrat-bold fased-1 fased-btn">FASED</button>
           </div>
           <!--Boton Contacto-->
           <div class="d-flex align-items-center justify-content-center col-4 p-0">
-            <button id="btn_contacto" class="btn btn-outline-light ">
+            <button id="btn_contacto" class="btn btn-outline-light p-0">
               <img src="./public/Encabezado/botón contacto ntp.png" alt="Descripción de la imagen"
-                class="d-block img-header">
+                class="img-btn p-0">
             </button>
           </div>
           <!--Boton Menu-->
-          <div class="d-flex align-items-center justify-content-start col-2  p-1">
-            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          <div class="d-flex align-items-center justify-content-start col-2 px-0">
+            <button class="btn w-100 px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
               aria-controls="offcanvasTop">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list w-100 "
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -72,7 +75,7 @@
 
   <!--SECCION VIDEO-->
   <section class="position-relative">
-    <video autoplay muted loop src="./public/Videos/Bienvenida_1.mp4" class="w-100"></video>
+    <video id="video_ntp" autoplay muted loop src="./public/Videos/Bienvenida_1.mp4" class="w-100"></video>
   </section>
 
 
@@ -274,19 +277,9 @@
   </section>
 
   <section class="bg-white">
-    <video autoplay muted loop src="./public/Videos/Empresas.mp4" class="w-100" height="auto">
+    <video id="video_marcas" autoplay muted loop src="./public/Videos/Empresas.mp4" class="w-100" height="auto">
   </section>
-  
-  <!-- SECCION CARRUSEL
-  <section id="carousel-section " class="d-flex">
-    <div id="carousel" class="flex-grow-1 overflow-hidden">
 
-    </div>
-    <div id="text-carousel" class="p-4">
-      <p>.</p>
-    </div>
-  </section>
-  -->
   <footer class="d-flex text-white justify-content-center">
     <section class="row px-5 py-3 justify-content-lg-between justify-content-md-between justify-content-sm-center justify-content-center g-0">
       <div class="text-white text-center text-lg-start text-md-start text-sm-center 
@@ -348,23 +341,31 @@
     const navbar = document.getElementById("mi-navbar");
     window.addEventListener("scroll", function () {
       if (window.scrollY > 100) {
-        //navbar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
-        //navbar.style.position = "fixed";
-        //navbar.style.transitionDuration="0.3s"
         navbar.style.animationName = "anim_navbar_ida_2";
         navbar.style.animationDuration = "0.3s";
         navbar.style.animationFillMode = "forwards";
       } else {
-        //navbar.style.backgroundColor = "white";
-        //navbar.style.position = "relative";
-        //navbar.style.transitionProperty="filter";
-        navbar.style.animationName = "anim_navbar_vuelta";
+        navbar.style.animationName = "anim_navbar_vuelta_2";
         navbar.style.animationDuration = "0.3s";
         navbar.style.animationFillMode = "forwards";
       }
       window.scroll
     });
   </script>
+  <script>
+    //Script para pausar video cabecera.
+    document.addEventListener("visibilitychange", function() {
+      var videoNtp = document.getElementById("video_ntp");
+      var videoMarcas = document.getElementById("video_marcas");
+      if (document.visibilityState === 'hidden') {
+        videoNtp.pause();
+        videoMarcas.pause();
+      } else {
+        videoNtp.play();
+        videoMarcas.play();
+      }
+    });
+    </script>
 </body>
 
 </html>

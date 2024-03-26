@@ -1,3 +1,12 @@
+body {
+  background-color: black;
+
+}
+
+/*Barra de navegacion*/
+.main-nav {
+  z-index: 2;
+}
 #btn_contacto {
   border: none;
   cursor: pointer;
@@ -8,31 +17,35 @@
 }
 
 
-
-#text-section {
-  padding: 20px;
-}
-
-
-body {
-  background-color: black;
-
-}
-
-/*Barra de navegacion*/
-.main-nav {
-  z-index: 2;
-}
-
 .bg-color-scroll {
   background-color: #ffffff79;
   transition: background-color 0.3s ease-in-out;
 }
-.img-header{
-  height: 75%;
+.img-btn{
+  height: 100%;
   width: auto;
   max-width: 100%;
 }
+.img-logo-ntp{
+  height: 45px;
+  width: auto;
+  max-width: 100%;
+  min-width: 250px;
+}
+.fased-btn{
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+@media (min-width:0px) and (max-width:500px) {
+  .img-logo-ntp {
+    height: 30px;
+    width: auto;
+    max-width: 100%;
+    min-width: 150px;
+  }
+}
+
 /*Seccion video*/
 #video-overlay {
   position: absolute;
@@ -270,7 +283,7 @@ footer {
 }
 
 .fased-1 {
-  font-size: 2.3em;
+  font-size: 200%;
   letter-spacing: -0.05em;
 }
 
@@ -315,7 +328,7 @@ footer {
   }
   
   .fased-1 {
-    font-size: 1.9em;
+    font-size: 150%;
     letter-spacing: -0.05em;
   }
 }
@@ -331,28 +344,10 @@ footer {
     
   }
 }
-
-@keyframes anim_navbar_regreso {
-  from {
-    background-color: #ffffff79;
-    position: fixed;
-  }
-
-  to {
-    background-color: #fff;
-    position: relative;
-  }
-}
-
-@keyframes anim_navbar_ida {
-  from {
-    background-color: #fff;
-    position: relative;
-  }
-
-  to {
-    background-color: #ffffff79;
-    position: fixed;
+@media (min-width:100px) and (max-width:500px) {
+  .fased-1 {
+    font-size: 100%;
+    letter-spacing: -0.05em;
   }
 }
 
