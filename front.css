@@ -271,6 +271,9 @@ footer {
 .subt-2-a {
   font-size: 1.4em;
 }
+.subt-2-b {
+  font-size: 1.35em;
+}
 
 .subt-3 {
   font-size: 1.5em;
@@ -319,6 +322,12 @@ footer {
   
   .subt-3 {
     font-size: 0.9em;
+  }
+  .subt-2-a {
+    font-size: 1.2em;
+  }
+  .subt-2-b {
+    font-size: 1.25em;
   }
   
   .txt-1 {
