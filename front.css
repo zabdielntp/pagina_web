@@ -2,6 +2,9 @@ body {
   background-color: black;
 
 }
+#text-section {
+  padding: 20px;
+}
 
 /*Barra de navegacion*/
 .main-nav {
@@ -93,12 +96,14 @@ body {
 .texto-blur {
   font-size: 5em;
   text-shadow: 1px 1px 15px white;
+  
 }
 
-@media (min-width:564px) and (max-width:1200px) {
+@media (min-width:564px) and (max-width:1400px) {
   .texto-blur {
-    font-size: 4em;
+    font-size: 3.5em;
     text-shadow: 1px 1px 15px white;
+    
   }
 }
 
@@ -119,7 +124,6 @@ body {
 }
 
 .card-solucion {
-  max-height: 490px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -156,7 +160,6 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 490px;
 }
 
 
@@ -264,6 +267,9 @@ footer {
 
 .subt-2 {
   font-size: 1.7em;
+}
+.subt-2-a {
+  font-size: 1.4em;
 }
 
 .subt-3 {
