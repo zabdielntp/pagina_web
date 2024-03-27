@@ -1,0 +1,19 @@
+  /*Footer*/
+  footer {
+    background-color: #411189;
+    width: 100%;
+  }
+  .link-footer{
+    text-decoration:none;
+  }
+  .link-footer:hover{
+    font-size: 1.1em;
+    background-color: #3b0e80;
+  }
+  @media (min-width:100px) and (max-width:350px) {
+    .rs-logo {
+      max-height: 30%;
+      
+    }
+  }
+  

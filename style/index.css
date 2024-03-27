@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+}
+
+#text-section {
+    padding: 20px;
+}
+
+/*Seccion video*/
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+
+}
+
+#texto-video:hover {
+    filter: opacity(10%);
+    transition: filter 0.3s ease;
+}
+
+/*Seccion datos duros*/
+#seccion_datos_duros {
+    background-image: url("../public/Fondos/Fondo_glass_morph.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta_dato_duro {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(10px);
+
+}
+
+.contenido_tarjeta_dato_duro {
+    padding: 20px;
+}
+
+.texto-blur {
+    font-size: 5em;
+    text-shadow: 1px 1px 15px white;
+
+}
+
+@media (min-width:564px) and (max-width:1400px) {
+    .texto-blur {
+        font-size: 3.5em;
+        text-shadow: 1px 1px 15px white;
+
+    }
+}
+
+/*Seccion texto fondo negro*/
+#seccion-texto {
+    background-color: black;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 2%;
+}
+
+
+
+/*Soluciones*/
+
+#seccion-soluciones {
+    background-color: #000;
+}
+
+.card-solucion {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.card-solucion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.692), transparent);
+    z-index: 1;
+
+}
+
+.card-solucion:hover {
+    filter: grayscale(0%);
+    background: linear-gradient(to top, transparent, transparent);
+}
+
+.card_prod {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card_prod img:hover {
+    filter: grayscale(0%);
+}
+
+.card_prod img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.texto-solucion {
+    z-index: 2;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0%, -20%);
+
+}
