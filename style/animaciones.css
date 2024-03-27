@@ -1,15 +1,15 @@
-.aro-morado{
+.fondo-50{
   z-index: -1;
   height: 50%;
   width: auto;
 }
+.fondo-25{
+  z-index: -1;
+  height: 25%;
+  width: auto;
+  
+}
 
-.top-25{
-  top:25%;
-}
-.top-75{
-  top:75%;
-}
 @keyframes anim_navbar_ida_2 {
     0% {
       position: relative;
