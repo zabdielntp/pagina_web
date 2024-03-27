@@ -1,0 +1,175 @@
+ /*Fuentes*/
+ @font-face {
+    font-family: "Homepagebaukasten";
+    src: url(../public/fuentes/Homepagebaukasten-Bold.ttf) format("truetype");
+  }
+  
+  .homepagebk{
+    font-family: "Homepagebaukasten";
+  }
+  .montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .montserrat-semi-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .montserrat-black {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .aleo-bold {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  .press-1 {
+    font-size: 4em;
+  }
+  
+  .press-2 {
+    font-size: 3em;
+  }
+  
+  .press-3 {
+    font-size: 2.5em;
+  }
+  
+  .subt-1 {
+    font-size: 2em;
+  }
+  
+  .subt-2 {
+    font-size: 1.7em;
+  }
+  .subt-2-a {
+    font-size: 1.4em;
+  }
+  .subt-2-b {
+    font-size: 1.35em;
+  }
+  
+  .subt-3 {
+    font-size: 1.5em;
+  }
+  
+  .txt-1 {
+    font-size: 1em;
+  }
+  
+  .txt-2 {
+    font-size: 0.7em;
+  }
+  
+  .txt-3 {
+    font-size: 0.5em;
+  }
+  
+  .fased-1 {
+    font-size: 200%;
+    letter-spacing: -0.05em;
+  }
+  
+  .color-verde {
+    background-color: green;
+  }
+  
+  @media (min-width:100px) and (max-width:570px) {
+    .press-1{
+      font-size: 2em;
+    }
+    .press-2 {
+      font-size: 1.8em;
+    }
+    
+    .press-3 {
+      font-size: 1.6em;
+    }
+    
+    .subt-1 {
+      font-size: 1.5em;
+    }
+    
+    .subt-2 {
+      font-size: 1.3em;
+    }
+    
+    .subt-3 {
+      font-size: 0.9em;
+    }
+    .subt-2-a {
+      font-size: 1.2em;
+    }
+    .subt-2-b {
+      font-size: 1.25em;
+    }
+    
+    .txt-1 {
+      font-size: .6em;
+    }
+    
+    .txt-2 {
+      font-size: 0.5em;
+    }
+    
+    .txt-3 {
+      font-size: 0.25em;
+    }
+    
+    .fased-1 {
+      font-size: 150%;
+      letter-spacing: -0.05em;
+    }
+  }
+  @media (min-width:768px) and (max-width:880px) {
+    .press-3 {
+      font-size: 2.2em;
+      
+    }
+  }
+  @media (min-width:768px) and (max-width:1000px) {
+    .subt-2 {
+      font-size: 1.2em;
+      
+    }
+  }
+  @media (min-width:100px) and (max-width:500px) {
+    .fased-1 {
+      font-size: 100%;
+      letter-spacing: -0.05em;
+    }
+  }
+  

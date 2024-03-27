@@ -1,0 +1,43 @@
+.aro-morado{
+  z-index: -1;
+  height: 50%;
+  width: auto;
+}
+
+.top-25{
+  top:25%;
+}
+.top-75{
+  top:75%;
+}
+@keyframes anim_navbar_ida_2 {
+    0% {
+      position: relative;
+      background-color: #fff;
+    }
+  
+    1% {
+      position: fixed;
+    }
+  
+    100% {
+      background-color: #ffffff79;
+      position: fixed;
+    }
+  }
+  
+  @keyframes anim_navbar_vuelta_2 {
+    0% {
+      position: fixed;
+      background-color: #ffffff79;
+    }
+  
+    1% {
+      position: relative;
+    }
+  
+    100% {
+      background-color: #fff;
+      position: relative;
+    }
+  }
