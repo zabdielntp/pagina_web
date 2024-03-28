@@ -488,3 +488,12 @@
 .rotate-zn-90{
     transform: rotateZ(-90deg);
 }
+.min-h-2{
+    min-height: 200px;
+}
+.min-h-3{
+    min-height: 300px;
+}
+.min-h-4{
+    min-height: 400px;
+}
